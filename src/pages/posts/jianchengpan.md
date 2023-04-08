@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'XXXX '
-pubDate: 2035-07-01
-description: 'Apple 与 Applied Environmental Research Foundation 合作，将促进印度马哈拉施特拉邦红树林的保育工作'
-author: 'Apple Newsroom'
+title: '开始使用博客的第一天'
+pubDate: 2023-04-08
+description: '博客记录第一天'
+author: 'KINSHING'
 cover:
-    url: 'https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Alibaug-canoe_Full-Bleed-Image.jpg.large_2x.jpg'
-    square: 'https://www.apple.com.cn/newsroom/images/values/environment/Apple-Earth-Day-India-mangrove-Alibaug-canoe_Full-Bleed-Image.jpg.large_2x.jpg'
+    url: 'https://pbs.twimg.com/media/Fsi-2_eaMAA4ACy?format=jpg&name=medium'
+    square: 'https://pbs.twimg.com/media/Fsi-2_eaMAA4ACy?format=jpg&name=medium'
     alt: 'cover'
-tags: ["深度学习"]
-theme: 'dark'
+tags: ["随手记"]
+theme: 'light'
 featured: true
 ---
