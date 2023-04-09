@@ -5,8 +5,8 @@ pubDate: 2023-04-08
 description: 'ssh+frp 实现内网穿透的使用教程'
 author: 'kinshingpoon'
 cover:
-    url: 'https://img2.baidu.com/it/u=518259241,2345944258&fm=253&fmt=auto&app=138&f=PNG?w=870&h=500'
-    square: 'https://img2.baidu.com/it/u=518259241,2345944258&fm=253&fmt=auto&app=138&f=PNG?w=870&h=500'
+    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'
+    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'
     alt: 'cover'
 tags: ["软件使用"]
 theme: 'light'
@@ -39,7 +39,7 @@ featured: true
 
 下载地址：https://github.com/fatedier/frp/releases
 
-![|inline](https://i2.100024.xyz/2023/04/09/gznjmm.webp)
+![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/image-20220304171619936.png)
 
 我的是ubuntu所以就算下载了`frp_0.34.3_linux_amd64.tar.gz`可以根据自己的电脑选择
 

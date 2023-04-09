@@ -5,8 +5,8 @@ pubDate: 2023-04-08
 description: '博客记录第一天'
 author: 'kinshingpoon'
 cover:
-    url: 'https://img1.baidu.com/it/u=2471839399,2024691640&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
-    square: 'https://img1.baidu.com/it/u=2471839399,2024691640&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
+    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
+    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
     alt: 'cover'
 tags: ["随手记"]
 theme: 'light'
