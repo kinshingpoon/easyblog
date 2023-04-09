@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: '开始使用博客的第一天'
 pubDate: 2023-04-08
 description: '博客记录第一天'
-author: 'KINSHING'
+author: 'kinshingpoon'
 cover:
     url: 'https://img1.baidu.com/it/u=2471839399,2024691640&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
     square: 'https://img1.baidu.com/it/u=2471839399,2024691640&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500'
