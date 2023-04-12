@@ -31,7 +31,7 @@ featured: true
 
 ![image-20220128221607984|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/image-20220128221607984.png)
 
-![image-20220128221619506](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/image-20220128221619506.png)
+![image-20220128221619506|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/image-20220128221619506.png)
 
 点击启动：
 
