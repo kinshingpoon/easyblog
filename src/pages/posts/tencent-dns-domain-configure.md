@@ -1,8 +1,8 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '腾讯云域名绑定博客服务器Vercel(更新中...)'
+title: '腾讯云域名绑定博客服务器Vercel'
 pubDate: 2023-05-19
-description: '准备课堂汇报整理一下看的几篇prompt tuning的文章'
+description: '给网站设置自定义域名'
 author: 'kinshingpoon'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191620264.png'
