@@ -2,7 +2,7 @@
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Prompt Engineering in Vision and Language'
 pubDate: 2023-05-19
-description: '准备课堂汇报整理一下看的几篇prompt tuning的文章'
+description: '课堂汇报整理一下看的几篇prompt tuning的文章'
 author: 'kinshingpoon'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
@@ -22,7 +22,9 @@ featured: true
 4.	预训练，提示，预测范式（Pre-train, Prompt, Predict）
 
 现在的第四个范式——提示工程下的通用大模型在计算机视觉，自然语言，多模态领域广泛使用。相比于Fine-tuning范式，Prompting有着更符合实际应用的优势和趋势（结合下图理解）：
+
 Fine-tuning是预训练语言模型“迁就“各种下游任务。具体体现就是上面提到的通过引入各种辅助任务loss，将其添加到预训练模型中，然后继续pre-training，以便让其更加适配下游任务。总之，这个过程中，预训练语言模型做出了更多的牺牲。
+
 Prompting是各种下游任务“迁就“预训练语言模型。具体体现也是上面介绍的，我们需要对不同任务进行重构，使得它达到适配预训练语言模型的效果。总之，这个过程中，是下游任务做出了更多的牺牲。（部分参考来自https://zhuanlan.zhihu.com/p/395115779）
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512884.png)
@@ -53,12 +55,14 @@ Prompt tuning是一种来源于自然语言处理模型优化方法，它的意�
 5. 降低开发成本：Prompt tuning可以通过减少开发人员需要手动调整模型的调整次数，从而降低开发的人工成本。
 
 # 二、方法
+
 首先主要从几篇重要论文讲述提示工程在视觉和语言上的应用：（第一部分关于介绍什么是Prompt Tuning，第二部分介绍Prompt Tuning在视觉和语言任务上的应用。）
 I.	Prompt Tuning
 A.	Visual prompt tuning
 B.	Prompting visual-language models for efficient video understanding
 
 ## I.A. Visual prompt tuning
+
 当前的迁移学习协议根据调整范围进行分组:完全微调，面向头部和面向骨干的方法。相反，视觉提示微调（Visual prompt tuning, VPT）在输入空间中添加了额外的参数。方法对比如下图所示：
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041047642.png)
@@ -74,6 +78,7 @@ B.	Prompting visual-language models for efficient video understanding
 VPT方法只在输入空间中引入少量特定于任务的可学习参数，而在下游训练期间冻结整个预训练的Transformer主干。在实践中，这些附加参数被简单地添加到每个transformer层的输入序列中，并在微调期间与线性头部一起学习。
 
 ## I.B. Prompting visual-language models for efficient video understanding
+
 在视频理解任务中，本方法通过优化任务特定的提示向量和时间转换器，我们有效地使CLIP适应各种视频理解任务: action recognition, text-video retrieval, and action localisation, across closed-set, few-shot, and zero-shot scenarios.
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041050635.png)
@@ -103,6 +108,7 @@ B.	Track anything: Segment anything meets videos
 C.	Caption Anything: Interactive Image Description with Diverse Multimodal Controls
 
 ## II.A. Segment anything
+
 首先关于什么是Segment anything，区别于语义分割和实例分割，它分割的物体更加多元，的更加广泛，包括实力分割目标的部分（例如，剪刀的剪刀把和剪刀头）。下面是Segment anything中的300个masks以上分割结果图：
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041052650.png)
@@ -131,6 +137,7 @@ C.	Caption Anything: Interactive Image Description with Diverse Multimodal Contr
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041054547.png)
 
 TAM分成四个步骤：
+
 Step 1: Initialization with SAM.
 
 Step 2: Tracking with XMem.
