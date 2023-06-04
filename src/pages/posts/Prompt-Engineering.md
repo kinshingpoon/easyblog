@@ -15,7 +15,9 @@ featured: true
 # 一、介绍
 ## 背景
 自从GPT3问世以来，“预训练+微调”的模式被广泛应用在各类大模型的下游任务中。在视觉领域，同样受到语言大模型的启发，包括视觉和语言交叉的多模态领域，“预训练+微调”的模式在多个领域被使用。但是这套模式最突出的问题在于微调的代价还是太高，对于中小型企业来讲，技术难度和成本都太大，不仅需要大量的数据去进行支持，同时最终的效果也是难以保证的，因此一个可以通用的且微调代价小的通用大模型范式亟待挖掘。
-	将近代自然语言处理（Natural Language Processing，NLP）技术的发展可以总结为四种范式，分别为：
+
+将近代自然语言处理（Natural Language Processing，NLP）技术的发展可以总结为四种范式，分别为：
+
 1.	非神经网络时代的完全监督学习 （Fully Supervised Learning, Non-Neural Network）
 2.	基于神经网络的完全监督学习 (Fully Supervised Learning, Neural Network)
 3.	预训练，精调范式 (Pre-train, Fine-tune)
