@@ -12,7 +12,7 @@ tags: ["深度学习"]
 theme: 'light'
 featured: true
 ---
-# 介绍
+# 一、介绍
 ## 背景
 自从GPT3问世以来，“预训练+微调”的模式被广泛应用在各类大模型的下游任务中。在视觉领域，同样受到语言大模型的启发，包括视觉和语言交叉的多模态领域，“预训练+微调”的模式在多个领域被使用。但是这套模式最突出的问题在于微调的代价还是太高，对于中小型企业来讲，技术难度和成本都太大，不仅需要大量的数据去进行支持，同时最终的效果也是难以保证的，因此一个可以通用的且微调代价小的通用大模型范式亟待挖掘。
 	将近代自然语言处理（Natural Language Processing，NLP）技术的发展可以总结为四种范式，分别为：
@@ -23,7 +23,9 @@ featured: true
 现在的第四个范式——提示工程下的通用大模型在计算机视觉，自然语言，多模态领域广泛使用。相比于Fine-tuning范式，Prompting有着更符合实际应用的优势和趋势（结合下图理解）：
 Fine-tuning是预训练语言模型“迁就“各种下游任务。具体体现就是上面提到的通过引入各种辅助任务loss，将其添加到预训练模型中，然后继续pre-training，以便让其更加适配下游任务。总之，这个过程中，预训练语言模型做出了更多的牺牲。
 Prompting是各种下游任务“迁就“预训练语言模型。具体体现也是上面介绍的，我们需要对不同任务进行重构，使得它达到适配预训练语言模型的效果。总之，这个过程中，是下游任务做出了更多的牺牲。（部分参考来自https://zhuanlan.zhihu.com/p/395115779）
+
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512884.png)
+
 当前大模型时代下的四驾马车分别是数据，模型、预训练方式、提示工程，其中提示工程在视觉和语言任务中发挥重要作用。
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041042639.png)
@@ -44,7 +46,7 @@ Prompt tuning是一种来源于自然语言处理模型优化方法，它的意�
 4. 提高泛化能力：通过Prompt tuning提高模型性能，可以增强模型的泛化能力，让它可以更好地适应新的场景和任务。
 5. 降低开发成本：Prompt tuning可以通过减少开发人员需要手动调整模型的调整次数，从而降低开发的人工成本。
 
-# 方法
+# 二、方法
 首先主要从几篇重要论文讲述提示工程在视觉和语言上的应用：（第一部分关于介绍什么是Prompt Tuning，第二部分介绍Prompt Tuning在视觉和语言任务上的应用。）
 I.	Prompt Tuning
 A.	Visual prompt tuning
@@ -133,7 +135,7 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 
 此模型通过引入了SAM和LLM分别作为视觉和语言提示模版生成模型，扩展了文本生成模型，使其更加通用和具有更人性化的价值。
 
-# 讨论
+# 三、讨论
 通用人工智能人工智能发展的一个阶段，目前我们正处于朝着通用人工智能的方向迈进，其中当前提示工程为通用人工智能提供了一个源动力，其逐渐在计算机视觉、自然语言以及多模态学习中发挥着中要作用。关于Prompt tuning在未来的发展趋势，可能未来在以下几个方面有着较大的发展潜力：（以下chatGPT生成内容）
 1. 自动Prompt tuning：目前，Prompt tuning中大量的操作需要人工参与，这使得Prompt tuning的应用范围受到了较大的限制。因此，自动Prompt tuning是一个非常有前途的发展方向。
 2. 非监督学习的Prompt tuning：监督学习的Prompt tuning需要使用大量有标注的数据，这会增加数据的成本和难度。因此，非监督学习的Prompt tuning是一个很有吸引力的选项。
@@ -147,9 +149,13 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 
 相关内容可以参考slides：https://kinshingpoon.github.io/Presentations/Prompt-Engineering.pdf
 
-# 参考文献
+# 四、参考文献
 [1] Ju, Chen, et al. "Prompting visual-language models for efficient video understanding." Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXXV. Cham: Springer Nature Switzerland, 2022.
+
 [2] Jia, Menglin, et al. "Visual prompt tuning." Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXXIII. Cham: Springer Nature Switzerland, 2022.
+
 [3] Kirillov, Alexander, et al. "Segment anything." arXiv preprint arXiv:2304.02643 (2023).
+
 [4] Yang, Jinyu, et al. "Track anything: Segment anything meets videos." arXiv preprint arXiv:2304.11968 (2023).
+
 [5] Wang, Teng, et al. "Caption Anything: Interactive Image Description with Diverse Multimodal Controls." arXiv preprint arXiv:2305.02677 (2023).
