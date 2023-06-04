@@ -23,9 +23,7 @@ featured: true
 现在的第四个范式——提示工程下的通用大模型在计算机视觉，自然语言，多模态领域广泛使用。相比于Fine-tuning范式，Prompting有着更符合实际应用的优势和趋势（结合下图理解）：
 Fine-tuning是预训练语言模型“迁就“各种下游任务。具体体现就是上面提到的通过引入各种辅助任务loss，将其添加到预训练模型中，然后继续pre-training，以便让其更加适配下游任务。总之，这个过程中，预训练语言模型做出了更多的牺牲。
 Prompting是各种下游任务“迁就“预训练语言模型。具体体现也是上面介绍的，我们需要对不同任务进行重构，使得它达到适配预训练语言模型的效果。总之，这个过程中，是下游任务做出了更多的牺牲。（部分参考来自https://zhuanlan.zhihu.com/p/395115779）
-
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512884.png)
-
 当前大模型时代下的四驾马车分别是数据，模型、预训练方式、提示工程，其中提示工程在视觉和语言任务中发挥重要作用。
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041042639.png)
