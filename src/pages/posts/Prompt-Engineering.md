@@ -33,9 +33,13 @@ Prompting是各种下游任务“迁就“预训练语言模型。具体体现�
 
 ## 发展历史
 （以下chatGPT生成内容）
+
 Prompt tuning或Prompt engineering是一种自然语言处理模型优化方法，其发展历史可以追溯到2015-2016年，当时它被称为Input reshaping，是一种集成语言建模和模型迁移的方法。然而，该方法并没有得到广泛的应用，直到OpenAI和Google在2019年以后开始使用这种方法来优化GPT-2等语言模型的性能。
+
 2019年，OpenAI的研究团队发表了《Language Models are Unsupervised Multitask Learners》一文，该论文中提到了使用Input Perturbation方法来研究语言模型的隐式知识表示。在这个实验中，研究者发现通过调整输入序列（如添加特定前缀或后缀）来影响模型的预测性能。这成为了prompt tuning背后的核心思想。
+
 2020年，OpenAI发表了《Language Models are Few-Shot Learners》一文，提出了GPT-3，该模型使用了一种基于样例推理的方法，即使用少量的样例数据来完成一些特定的任务，这也是一个基于Prompt tuning的应用实例。
+
 在GPT-3的发展中，Google的研究者也进行了类似的工作，他们在2020年通过大量的Prompt tuning来提高BERT的性能，这进一步推进了Prompt tuning在自然语言处理领域的发展。此外，Prompt tuning在一些机器学习竞赛中也得到了应用，如Kaggle中的Toxic Comment Classification Challenge等，证明了它在文本分类和序列标注等任务中的有效性。
 
 ## 应用价值
@@ -85,6 +89,7 @@ VPT方法只在输入空间中引入少量特定于任务的可学习参数，�
 (b) Action Localisation 考虑在未修剪的长视频中定位和分类动作。两阶段范式: class-agnostic proposal detection和proposal classification（参考上一个图中的Action Localisation）。为了proposal classification，此方法采用了与动作识Action Recognition别相同的实现细节。这也表明了Promts使得模型通用的一个原因就是可以将任务拆分成多个子任务，其中部分子任务共享一个共同的模型参数。
 
 (c) Text-Video Retrieval 考虑联合学习将视频及其相应的文本描述配对的视觉和文本嵌入。在这个任务中的跨模态检索框架，与动作识别Action Recognition和动作定位Action Localisation任务共享模型参数。想比于动作识别任务，此任务可以理解为微细粒度分类任务，而动作识别Action Recognition可以理解为此任务的一个子任务。
+
 由于分类和检索都可以使用一个框架，使用从文本生成的分类器或查询嵌入来处理，无论是类别名称还是自由形式的描述，所有任务都可以利用一个共享的主干，但却可以实现竞争性能。适应新任务只需要优化几个提示向量，促进了少数镜头问题，也因此可以更好地利用丰富的训练数据，并进一步泛化超越闭集类别。
 
 其次Prompt Engineering在视觉和语言任务上的应用（按照下面大纲进行说明）：
@@ -112,12 +117,15 @@ C.	Caption Anything: Interactive Image Description with Diverse Multimodal Contr
 
 此方法使用一个MAE预训练的视觉变压器(ViT)最低限度地适应处理高分辨率输入
 用位置编码对点和框进行学习嵌入求和; 使用CLIP现成的文本编码器的自由格式文本;蒙版嵌入使用卷积和求和元素与图像嵌入; 利用焦损和色块损耗的线性组合进行掩模预测。
+
 此任务还通过设计一个子任务解决了分割中的歧义问题：对于一个输出，如果给出一个模糊的提示，该模型将平均多个有效掩码。即通过一个提示可以输出多个有效的分割结果，选取得分较高的掩码进行输出。如下图所示：
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041054846.png)
 
 本模型在多个下游子任务上可以表现出较好的效果Zero-Shot Edge Detection、Zero-Shot Object Proposals，Zero-Shot Instance Segmentation，Zero-Shot Text-to-Mask。
+
 ## II.B. Track anything: Segment anything meets videos
+
 考虑到Segment anything强大的图像分割能力和与不同提示的高交互性，但是它在视频的一致分割方面表现不佳。因此提出了Segment anything在视频分割上的拓展——Track anything，如下图所示：
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041054547.png)
@@ -132,8 +140,10 @@ Step 3: Reﬁnement with SAM.
 Step 4: Correction with human participation.
 
 SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的视频分割。XMem的缺点也很明显:(1)作为半监督VOS模型，需要精确的掩码进行初始化;(2)对于长视频，XMem很难从跟踪或分割失败中恢复。目前的交互式VOS方法需要多轮来改进结果，这阻碍了它们在实际应用中的效率。
+
 ## II.C. Caption Anything: Interactive Image Description with Diverse Multimodal Controls
 最先进的方法是在带注释的输入控件和输出标题对上进行训练的。然而，这种标注良好的多模态数据的稀缺性在很大程度上限制了它们在交互式人工智能系统中的可用性和可扩展性。可控图像描述(CIC)是一个很有前途的研究方向，它使语言输出与用户意图保持一致。但是现有的CIC模型通常依赖于人工注释(图像、文本、控制信号)元组的训练。数据集的有限规模限制了这些模型理解控制信号的能力; 这些模型只支持预定义的单个或多个控制信号，这限制了它们组合不同控制和引入可控制性新维度的灵活性。
+
 为了解决上述问题，通过引入Segment Anything，使得CIC模型可以实现多种与用户交互的任务：以目标为中心的对话、多种视觉控制的文本描述等，如下图所示：
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041056970.png)
