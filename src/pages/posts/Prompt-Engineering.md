@@ -20,6 +20,7 @@ featured: true
 2.	基于神经网络的完全监督学习 (Fully Supervised Learning, Neural Network)
 3.	预训练，精调范式 (Pre-train, Fine-tune)
 4.	预训练，提示，预测范式（Pre-train, Prompt, Predict）
+
 现在的第四个范式——提示工程下的通用大模型在计算机视觉，自然语言，多模态领域广泛使用。相比于Fine-tuning范式，Prompting有着更符合实际应用的优势和趋势（结合下图理解）：
 Fine-tuning是预训练语言模型“迁就“各种下游任务。具体体现就是上面提到的通过引入各种辅助任务loss，将其添加到预训练模型中，然后继续pre-training，以便让其更加适配下游任务。总之，这个过程中，预训练语言模型做出了更多的牺牲。
 Prompting是各种下游任务“迁就“预训练语言模型。具体体现也是上面介绍的，我们需要对不同任务进行重构，使得它达到适配预训练语言模型的效果。总之，这个过程中，是下游任务做出了更多的牺牲。（部分参考来自https://zhuanlan.zhihu.com/p/395115779）
@@ -39,6 +40,7 @@ Prompt tuning或Prompt engineering是一种自然语言处理模型优化方法�
 
 ## 应用价值
 （以下chatGPT生成内容）
+
 Prompt tuning是一种来源于自然语言处理模型优化方法，它的意义和价值在于：
 1. 提高模型性能：Prompt tuning可以显着提高模型的性能，尤其是对于少样本或零样本任务，它可以通过对输入prompt进行调整，使得模型能够更好地理解任务和对文本进行分类或标注。
 2. 减少数据需求：Prompt tuning通过引导模型的学习，可以让模型更快速地适应不同的任务，减少了对大量标记数据的需求。这对于许多应用场景下的数据稀缺问题有着很重要的意义。
@@ -73,21 +75,28 @@ VPT方法只在输入空间中引入少量特定于任务的可学习参数，�
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041050635.png)
 
 在此方法（如上图所示）学习提示的模式适应，在训练时，CLIP的图像和文本编码器都保持冻结状态，梯度将流经文本编码器，只更新提示向量。 最终，这些可学习的向量最终构建文本编码器可以理解的“虚拟”提示模板，并生成所需的分类器或查询嵌入。通过这个方式可以将多个任务共享一个共享的参数权重，且使用了预训练的CLIP模型，减少训练难度。举例多任务共享权重：
+
 (a) Action Recognition 考虑将视频剪辑或片段分类为动作类别之一。
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041050256.png)
 
 其中提示向量{𝑎_}是所有操作类别共享的，因此它们只是特定于任务的。
-(b) Action Localisation 考虑在未修剪的长视频中定位和分类动作。
-两阶段范式: class-agnostic proposal detection和proposal classification（参考上一个图中的Action Localisation）。为了proposal classification，此方法采用了与动作识Action Recognition别相同的实现细节。这也表明了Promts使得模型通用的一个原因就是可以将任务拆分成多个子任务，其中部分子任务共享一个共同的模型参数。
+
+(b) Action Localisation 考虑在未修剪的长视频中定位和分类动作。两阶段范式: class-agnostic proposal detection和proposal classification（参考上一个图中的Action Localisation）。为了proposal classification，此方法采用了与动作识Action Recognition别相同的实现细节。这也表明了Promts使得模型通用的一个原因就是可以将任务拆分成多个子任务，其中部分子任务共享一个共同的模型参数。
+
 (c) Text-Video Retrieval 考虑联合学习将视频及其相应的文本描述配对的视觉和文本嵌入。在这个任务中的跨模态检索框架，与动作识别Action Recognition和动作定位Action Localisation任务共享模型参数。想比于动作识别任务，此任务可以理解为微细粒度分类任务，而动作识别Action Recognition可以理解为此任务的一个子任务。
 由于分类和检索都可以使用一个框架，使用从文本生成的分类器或查询嵌入来处理，无论是类别名称还是自由形式的描述，所有任务都可以利用一个共享的主干，但却可以实现竞争性能。适应新任务只需要优化几个提示向量，促进了少数镜头问题，也因此可以更好地利用丰富的训练数据，并进一步泛化超越闭集类别。
 
 其次Prompt Engineering在视觉和语言任务上的应用（按照下面大纲进行说明）：
+
 II.	Segment Anything ++
+
 A.	Segment anything
+
 B.	Track anything: Segment anything meets videos
+
 C.	Caption Anything: Interactive Image Description with Diverse Multimodal Controls
+
 ## II.A. Segment anything
 首先关于什么是Segment anything，区别于语义分割和实例分割，它分割的物体更加多元，的更加广泛，包括实力分割目标的部分（例如，剪刀的剪刀把和剪刀头）。下面是Segment anything中的300个masks以上分割结果图：
 
@@ -115,9 +124,13 @@ C.	Caption Anything: Interactive Image Description with Diverse Multimodal Contr
 
 TAM分成四个步骤：
 Step 1: Initialization with SAM.
+
 Step 2: Tracking with XMem.
+
 Step 3: Reﬁnement with SAM.
+
 Step 4: Correction with human participation.
+
 SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的视频分割。XMem的缺点也很明显:(1)作为半监督VOS模型，需要精确的掩码进行初始化;(2)对于长视频，XMem很难从跟踪或分割失败中恢复。目前的交互式VOS方法需要多轮来改进结果，这阻碍了它们在实际应用中的效率。
 ## II.C. Caption Anything: Interactive Image Description with Diverse Multimodal Controls
 最先进的方法是在带注释的输入控件和输出标题对上进行训练的。然而，这种标注良好的多模态数据的稀缺性在很大程度上限制了它们在交互式人工智能系统中的可用性和可扩展性。可控图像描述(CIC)是一个很有前途的研究方向，它使语言输出与用户意图保持一致。但是现有的CIC模型通常依赖于人工注释(图像、文本、控制信号)元组的训练。数据集的有限规模限制了这些模型理解控制信号的能力; 这些模型只支持预定义的单个或多个控制信号，这限制了它们组合不同控制和引入可控制性新维度的灵活性。
@@ -137,10 +150,13 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 
 # 三、讨论
 通用人工智能人工智能发展的一个阶段，目前我们正处于朝着通用人工智能的方向迈进，其中当前提示工程为通用人工智能提供了一个源动力，其逐渐在计算机视觉、自然语言以及多模态学习中发挥着中要作用。关于Prompt tuning在未来的发展趋势，可能未来在以下几个方面有着较大的发展潜力：（以下chatGPT生成内容）
+
 1. 自动Prompt tuning：目前，Prompt tuning中大量的操作需要人工参与，这使得Prompt tuning的应用范围受到了较大的限制。因此，自动Prompt tuning是一个非常有前途的发展方向。
 2. 非监督学习的Prompt tuning：监督学习的Prompt tuning需要使用大量有标注的数据，这会增加数据的成本和难度。因此，非监督学习的Prompt tuning是一个很有吸引力的选项。
 3. 更加可扩展的Prompt tuning方法：目前的Prompt tuning方法大多是基于输入序列的修改，这限制了Prompt tuning的扩展性。面向特定任务和领域的Prompt tuning模型不足以适应普遍性的Prompt tuning需求，因此更加通用的和可扩展的Prompt tuning方法是值得研究的方向。
+
 为了提高Prompt tuning的性能和效率，以下是一些可以采用的方案：（以下chatGPT生成内容）
+
 1. 多样性Prompt design：提高Prompt diversity和灵活性，增加Prompt样本的多样性，从而更充分地利用模型的潜力，提高模型性能。
 2. 融合外部知识：通过加入外部知识，如知识图谱、领域专家知识等，来指导模型生成更准确的Prompt，提高Prompt tuning的性能。
 3. 生成式Prompt tuning方法：生成式Prompt tuning方法可以使用概率分布生成Prompt序列，这种生成式方法具有更高的自适应性和灵活性。
