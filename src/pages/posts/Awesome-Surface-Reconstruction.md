@@ -12,7 +12,6 @@ tags: ["深度学习"]
 theme: 'light'
 featured: true
 ---
-# Awesome Surface Reconstruction from Point Clouds
 
 ### New Paradigm（Neural Fields）
 - [CVPR 2023 Highlight] **Neural Kernel Surface Reconstruction** [[paper]](https://arxiv.org/pdf/2305.19590.pdf) [[code]](https://github.com/nv-tlabs/NKSR)
