@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'Reducing Semantic Confusion: Scene-aware Aggregation Network for Remote Sensing Cross-modal Retrieval(更新中...)'
+title: 'Reducing Semantic Confusion: Scene-aware Aggregation Network for Remote Sensing Cross-modal Retrieval'
 pubDate: 2023-05-21
 description: 'ICMR2023 Paper'
 author: 'kinshingpoon'
