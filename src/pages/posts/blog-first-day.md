@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: '开始使用博客的第一天'
 pubDate: 2023-04-08
 description: '博客记录第一天'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'

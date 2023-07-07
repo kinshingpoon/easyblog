@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: '腾讯云域名绑定博客服务器Vercel'
 pubDate: 2023-05-19
 description: '给网站设置自定义域名'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191620264.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191620264.png'

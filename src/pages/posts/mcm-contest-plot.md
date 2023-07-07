@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'python论文画图模板'
 pubDate: 2023-04-12
 description: 'python论文画图模板'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'

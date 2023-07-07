@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'Awesome Surface Reconstruction from Point Clouds'
 pubDate: 2023-07-07
 description: 'Surface Reconstruction'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307071758579.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307071758579.png'

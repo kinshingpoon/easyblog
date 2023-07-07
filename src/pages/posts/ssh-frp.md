@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'ssh+frp 实现内网穿透'
 pubDate: 2023-04-08
 description: 'ssh+frp 实现内网穿透的使用教程'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'

@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'Prompt Engineering in Vision and Language'
 pubDate: 2023-05-19
 description: '课堂汇报整理一下看的几篇prompt tuning的文章'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'

@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'ICMR2023参会准备'
 pubDate: 2023-04-13
 description: '记录第一次出国参会的前期准备'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'

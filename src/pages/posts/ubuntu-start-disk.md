@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: '制作Ubuntu启动盘'
 pubDate: 2023-04-12
 description: '制作Ubuntu启动盘教程'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121702611.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121702611.png'

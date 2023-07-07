@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownPost.astro'
 title: 'pycharm使用sftp同步服务器'
 pubDate: 2023-04-12
 description: 'pycharm使用sftp同步服务器'
-author: 'kinshingpoon'
+author: 'Jack Pan'
 cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121720551.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121720551.png'
