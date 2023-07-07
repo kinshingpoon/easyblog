@@ -6,7 +6,8 @@ description: 'Thessaloniki ｜ Athens'
 author: 'Jack Pan'
 cover:
     url: ''
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307072020941.png'
+    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307072011177.png'
+    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307072011177.png'
     alt: 'cover'
 tags: ["随手记"]
 theme: 'light'
