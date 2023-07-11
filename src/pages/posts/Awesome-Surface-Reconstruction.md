@@ -18,6 +18,21 @@ featured: true
   - Huang J, Gojcic Z, Atzmon M, et al. (NVIDIA)
 - [CVPR 2022] **Neural Fields as Learnable Kernels for 3D Reconstruction** [[paper]](https://arxiv.org/pdf/2111.13674.pdf) [[code]](https://github.com/nv-tlabs/NKSR)
   -  Williams F, Gojcic Z, Khamis S, et al. (NVIDIA)
+
+### Implicit Representation
+- [CVPR 2022] **POCO: Point Convolution for Surface Reconstruction** [[paper]](http://openaccess.thecvf.com/content/CVPR2022/papers/Boulch_POCO_Point_Convolution_for_Surface_Reconstruction_CVPR_2022_paper.pdf) [[code]](https://github.com/valeoai/POCO) 
+  - Boulch, Alexandre, and Renaud Marlet. (Valeo.ai)
+- [ECCV 2020] **Points2Surf: Learning Implicit Surfaces from Point Cloud Patches**  [[paper]](https://arxiv.org/pdf/2007.10453) [[code]](https://github.com/ErlerPhilipp/points2surf) 
+  - Erler, Philipp, et al. 
+- [CVPR 2020] **Neural Implicit Embedding for Point Cloud Analysis**  [[paper]](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fujiwara_Neural_Implicit_Embedding_for_Point_Cloud_Analysis_CVPR_2020_paper.pdf) 
+  - Fujiwara, Kent, and Taiichi Hashimoto. (LINE Corporation)
+- [CVPR 2019] **Learning Implicit Fields for Generative Shape Modeling** [[paper]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_Learning_Implicit_Fields_for_Generative_Shape_Modeling_CVPR_2019_paper.pdf) [[code]](https://github.com/czq142857/implicit-decoder) 
+  - Chen, Zhiqin, and Hao Zhang. (Simon Fraser University)
+- [ICML 2018] **Learning Representations and Generative Models for 3D Point Clouds** [[paper]](http://proceedings.mlr.press/v80/achlioptas18a/achlioptas18a.pdf) 
+  - Achlioptas, Panos, et al. 
+- [NeruIPS 2016] **Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling** [[paper]](https://proceedings.neurips.cc/paper_files/paper/2016/file/44f683a84163b3523afe57c2e008bc8c-Paper.pdf) 
+  - Wu, Jiajun, et al. (MIT CSAIL)
+
 ### Optimization (Oriented Normal Estimation, Signed / Unsigned Distance Functions, Surface Representation, Priors)
 - [CVPR 2023] **SHS-Net: Learning Signed Hyper Surfaces for Oriented Normal Estimation of Point Clouds** [[paper]](http://openaccess.thecvf.com/content/CVPR2023/papers/Li_SHS-Net_Learning_Signed_Hyper_Surfaces_for_Oriented_Normal_Estimation_of_CVPR_2023_paper.pdf) [[code]](https://github.com/LeoQLi/SHS-Net) 
   - Li, Qing, et al. （tsinghua BNRist）
@@ -31,8 +46,8 @@ featured: true
   - Ma, Baorui, et al. （tsinghua BNRist）
 - [CVPR 2022] **Reconstructing Surfaces for Sparse Point Clouds with On-Surface Priors** [[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Ma_Reconstructing_Surfaces_for_Sparse_Point_Clouds_With_On-Surface_Priors_CVPR_2022_paper.pdf) [[code]](https://github.com/mabaorui/OnSurfacePrior) 
   - Ma, Baorui, Yu-Shen Liu, and Zhizhong Han. （tsinghua BNRist）
-- [CVPR 2022] **POCO: Point Convolution for Surface Reconstruction** [[paper]](http://openaccess.thecvf.com/content/CVPR2022/papers/Boulch_POCO_Point_Convolution_for_Surface_Reconstruction_CVPR_2022_paper.pdf) [[code]](https://github.com/valeoai/POCO) 
-  - Boulch, Alexandre, and Renaud Marlet. (Valeo.ai)
+<!-- - [CVPR 2022] **POCO: Point Convolution for Surface Reconstruction** [[paper]](http://openaccess.thecvf.com/content/CVPR2022/papers/Boulch_POCO_Point_Convolution_for_Surface_Reconstruction_CVPR_2022_paper.pdf) [[code]](https://github.com/valeoai/POCO) 
+  - Boulch, Alexandre, and Renaud Marlet. (Valeo.ai) -->
 ### Underwater
 - [The International Journal of Robotics Research, IF=9.2] **A Surface Reconstruction Method for In-Detail Underwater 3D Optical Mapping** [[paper]](https://inria.hal.science/hal-01030845/file/underwater.pdf) 
 - [Journal of Field Robotics, IF=8.3] **Coverage Path Planning with Real-time Replanning and Surface Reconstruction for Inspection of Three-dimensional Underwater Structures using Autonomous Underwater Vehicles** [[paper]](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/113717/rob21554.pdf?sequence=1) 
