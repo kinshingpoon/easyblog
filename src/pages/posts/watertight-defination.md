@@ -41,6 +41,7 @@ Examples of very complex car models (left) and examples of the semi-convex hull 
 4. A non-manifold vertex is a vertex where the corresponding star is not connected when removing the vertex.-非流形顶点-移除顶点时，相应的星号没有连接的顶点
 5. A mesh is 2-manifold if it does contain neither self intersections, nor non-manifold edges, nor non-manifold vertices.-如果一个网格既不包含自交，也不包含非流形边，也不包含非流形顶点，那么它就是2流形的。
 ￼![| inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/manifold.jpg)
+
 Non-manifold vertex (left) and non-manifold edge (right); 
 
 
@@ -61,5 +62,5 @@ In other words, in a manifold mesh, there are at one place more than two faces t
 
 - incident faces 入射面
 
-￼![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/300px-Inclined_plane.png)
+![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/300px-Inclined_plane.png)
 
