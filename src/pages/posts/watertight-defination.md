@@ -5,8 +5,8 @@ pubDate: 2023-07-20
 description: '水密网格定义'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305210935705.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305210935705.png'
+    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
+    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
     alt: 'cover'
 tags: ["深度学习"]
 theme: 'light'
