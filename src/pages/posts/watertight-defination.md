@@ -23,7 +23,7 @@ https://davidstutz.de/a-formal-definition-of-watertight-meshes/
 
 Examples of very complex car models (left) and examples of the semi-convex hull algorithm for simplification (right).
 
- **Mario Botsch, Leif Kobbelt, Mark Pauly, Pierre Alliez, and Bruno Levy. Polygon Mesh Processing. AK Peters, 2010.**
+Mario Botsch, Leif Kobbelt, Mark Pauly, Pierre Alliez, and Bruno Levy. Polygon Mesh Processing. AK Peters, 2010.
 
 ![| inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/Pasted%20Graphic.png)
 
