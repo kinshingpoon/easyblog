@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121702611.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121702611.png'
     alt: 'cover'
-tags: ["软件使用"]
+tags: ["软件使用","Ubuntu","启动盘"]
 theme: 'light'
 featured: true
 ---

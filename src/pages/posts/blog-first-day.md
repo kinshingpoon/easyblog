@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
     alt: 'cover'
-tags: ["随手记"]
+tags: ["随手记","博客","简约"]
 theme: 'light'
 featured: true
 ---
@@ -18,4 +18,4 @@ featured: true
 
 其实最近事情有点多，但是可能不知道先做那个，干脆直接开始整整博客，这个也是我之前一直想要做的事情。
 
-
+项目代码：https://github.com/austin2035/astro-air-blog

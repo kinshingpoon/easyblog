@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191620264.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191620264.png'
     alt: 'cover'
-tags: ["软件使用"]
+tags: ["软件使用","域名","Vercel"]
 theme: 'light'
 featured: true
 ---
