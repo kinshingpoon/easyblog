@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '基于GPT3.5的HTML静态页面生成'
+title: '基于GPT3.5的html静态页面生成'
 pubDate: 2023-10-07
 description: 'HTML静态页面生成'
 author: 'Jack Pan'
@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
     alt: 'cover'
-tags: ["软件使用","HTML","ChatGPT"]
+tags: ["软件使用"]
 theme: 'light'
 featured: true
 ---
@@ -18,7 +18,7 @@ featured: true
 - GPT share link: https://chat.openai.com/share/c3c0ad23-9c41-43e4-94f1-69a1d44b4fda
 - demo link: http://jianchengpan.com/Info/email.html
 
-## 提示GPT生成HTML过程
+##提示GPT生成HTML过程
 
 - 当创建一个包含邮箱地址的HTML静态页面时，你可以使用以下示例作为起点。你可以将邮箱地址部分替换为你自己的邮箱地址：
 

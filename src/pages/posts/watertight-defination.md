@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
     alt: 'cover'
-tags: ["深度学习","3D","网格"]
+tags: ["深度学习"]
 theme: 'light'
 featured: true
 ---

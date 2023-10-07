@@ -8,11 +8,11 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310042342534.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310042342534.png'
     alt: 'cover'
-tags: ["软件使用","Git"]
+tags: ["软件使用"]
 theme: 'light'
 featured: true
 ---
-> 如果是使用mac或者windows，强烈建议使用Github Desktop版本，超级方便！
+如果是使用mac或者windows，强烈建议使用Github Desktop版本，超级方便！
 
 ## 创建新仓库
 

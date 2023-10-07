@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'
     alt: 'cover'
-tags: ["软件使用","数学建模","绘图"]
+tags: ["软件使用"]
 theme: 'light'
 featured: true
 ---
