@@ -11,6 +11,7 @@ cover:
 tags: ["Software Usage","Git","Github"]
 theme: 'light'
 featured: true
+font: ''
 ---
 如果是使用mac或者windows，强烈建议使用Github Desktop版本，超级方便！
 

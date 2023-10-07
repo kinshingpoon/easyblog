@@ -9,13 +9,16 @@ const { frontmatter } = Astro.props;
 const type = frontmatter.tags[0];
 const { pubDate, title, description, featured } = frontmatter;
 const dateFormated = formatDate(pubDate);
+
 ---
 
 <html lang="zh-CN" dir="ltr" class="js no-touch progressive-image no-reduced-motion progressive">
   <head>
     <BaseHead title={`${title} - ${SITE_TITLE}`} description={description} image={frontmatter.cover.square} />
   </head>
+  
   <body class:list={["page-article", { "theme-dark": frontmatter.theme === "dark" }]}>
+    <!-- <vite-error-overlay class="astro-dark"> -->
     <Header />
     <main id="main" class="main">
       <section>
@@ -31,19 +34,18 @@ const dateFormated = formatDate(pubDate);
             </div>
             <div class="pagetitle component">
               <div class="component-content">
-                <h1 class="hero-headline">{title}</h1>
+                <h1 class="hero-headline" style="font-family: Helvetica, Arial, sans-serif;">{title}</h1>
               </div>
             </div>
             <div class:list={[{ "featured-subhead": featured, "article-subhead": !featured }, "component"]}>
-              <div class="component-content">{description}</div>
+              <div class="component-content" style="text-align: center; line-height: 2; color: gray;">{description}</div>
             </div>
-
             <div class:list={["tagssheet component"]}>
-              <div class="component-content">
+              <div class="component-content" style="text-align: center; line-height: 1;">
                 {
                   frontmatter.tags.map((tag) => {
                     return (
-                      <a href={`/tags/${tag}`} class="tag">
+                      <a href={`/tags/${tag}`} class="tag" style="font-family: Georgia; font-weight: normal">
                         {tag}
                       </a>
                     );
@@ -53,15 +55,6 @@ const dateFormated = formatDate(pubDate);
             </div>
           </div>
           <slot />
-          <div class="component">
-            <div class="component-content">
-              <div class="article-copyright">
-                <a class="content" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank"
-                  >Attribution-NonCommercial-NoDerivs 4.0 International</a>
-                <p class="content">By {frontmatter.author} on {dateFormated}</p>
-              </div>
-            </div>
-          </div>
         </article>
       </section>
     </main>
@@ -71,5 +64,6 @@ const dateFormated = formatDate(pubDate);
       script.src = "/static/js/initPost.js";
       document.head.appendChild(script);
     </script>
+    <!-- </vite-error-overlay> -->
   </body>
 </html>
