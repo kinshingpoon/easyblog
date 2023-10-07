@@ -4,7 +4,7 @@ const { title, href, cover, tags, date  } = Astro.props;
 
 const dateFormated = formatDate(date);
 const type = tags[0];
-const label = `${title} - ${type} - 发表时间 ${dateFormated}`;
+const label = `${title} - ${type} - Published Time ${dateFormated}`;
 ---
 
 <li

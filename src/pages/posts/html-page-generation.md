@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
     alt: 'cover'
-tags: ["软件使用"]
+tags: ["Usage","ChatGPT","HTML"]
 theme: 'light'
 featured: true
 ---

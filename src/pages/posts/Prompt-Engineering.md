@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
     alt: 'cover'
-tags: ["深度学习"]
+tags: ["Deep Learning","Prompt Engineering","Vision and Language"]
 theme: 'light'
 featured: true
 ---

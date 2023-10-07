@@ -2,8 +2,13 @@ export function formatDate(dateString) {
   const date = new Date(dateString);
   const year = date.getFullYear();
   const month = date.getMonth() + 1;
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const englishMonth = monthNames[month - 1];
   const day = date.getDate();
-  return year + " 年 " + month + " 月 " + day + " 日";
+  return  day + ' ' + englishMonth + ', ' + year
 }
 
 // debounce function
