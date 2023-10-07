@@ -2,11 +2,11 @@
 layout: '../../layouts/MarkdownPost.astro'
 title: '基于GPT3.5的html静态页面生成'
 pubDate: 2023-10-07
-description: 'html generation'
+description: 'HTML静态页面生成'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071446772.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071446772.png'
+    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
+    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
     alt: 'cover'
 tags: ["软件使用"]
 theme: 'light'
@@ -14,7 +14,7 @@ featured: true
 ---
 ##  简单介绍
 
-可以通过GPT简单实现HTML页面生成，以下例子为制作一个简单的邮件信息界面
+可以通过GPT简单实现HTML页面生成，以下例子为制作一个简单的邮件展示的信息界面
 GPT share link: https://chat.openai.com/share/c3c0ad23-9c41-43e4-94f1-69a1d44b4fda
 demo link: http://jianchengpan.com/Info/email.html
 
