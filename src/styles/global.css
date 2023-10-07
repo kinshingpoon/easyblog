@@ -1,3 +1,7 @@
+.img[src$="break.svg"] {
+  object-fit: contain;
+}
+
 :root {
   --black: #1d1d1f;
   --bg-primary: #f5f5f7;
@@ -5607,23 +5611,23 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 }
 
 .pagebody-copy {
-  margin-bottom: 1.4211em
+  margin-bottom: 0.4211em
 }
 
 .pagebody-copy:lang(ar) {
-  margin-bottom: 1.57895em
+  margin-bottom: 0.57895em
 }
 
 .pagebody-copy:lang(ja) {
-  margin-bottom: 1.47376em
+  margin-bottom: 0%
 }
 
 .pagebody-copy:lang(th) {
-  margin-bottom: 1.36844em
+  margin-bottom: 0.36844em
 }
 
 .pagebody-copy:lang(ko) {
-  margin-bottom: 1.52632em
+  margin-bottom: 0.52632em
 }
 
 .pagebody-copy:first-child {
