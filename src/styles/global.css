@@ -473,7 +473,13 @@ a.nav-title:hover {
 }
 
 .tile .tile__media {
-  direction: ltr
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px; /* 设置容器的高度，可以根据实际需要调整 */
+  border: 0px solid #ccc; /* 仅用于示例，添加边框以便看到容器的边界 */
 }
 
 @media only screen and (max-width: 734px) {
@@ -5434,7 +5440,7 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
   font-size: 17px;
   line-height: 1.4211;
   font-weight: 400;
-  letter-spacing: .012em;
+  letter-spacing: .024em;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 }
 
@@ -5608,11 +5614,11 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 }
 
 .pagebody-copy {
-  margin-bottom: 0.4211em
+  margin-bottom: 1em;
 }
 
 .pagebody-copy:lang(ar) {
-  margin-bottom: 0.57895em
+  margin-bottom: 1em;
 }
 
 .pagebody-copy:lang(ja) {
@@ -5642,7 +5648,7 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 .component-content {
   margin-left: auto;
   margin-right: auto;
-  width: 653px
+  width: 653px;
 }
 
 @media only screen and (max-width: 1068px) {
