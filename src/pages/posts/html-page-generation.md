@@ -894,3 +894,4 @@ html<!DOCTYPE html>
 </html>
 
 ```
+- 在这个示例中，我们使用了`align-items`和`justify-content`属性来将页面内容水平和垂直居中显示。这将使容器框以及其中的文本和图标都在页面的中央。
