@@ -1,6 +1,3 @@
-.img[src$="break.svg"] {
-  object-fit: contain;
-}
 
 :root {
   --black: #1d1d1f;
