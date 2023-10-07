@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '1071. Greatest Common Divisor of Strings'
-pubDate: 2023-07-20
+pubDate: 2023-10-07
 description: '字符串问题'
 author: 'Jack Pan'
 cover:
