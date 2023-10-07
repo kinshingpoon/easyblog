@@ -194,3 +194,4 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 [4] Yang, Jinyu, et al. "Track anything: Segment anything meets videos." arXiv preprint arXiv:2304.11968 (2023).
 
 [5] Wang, Teng, et al. "Caption Anything: Interactive Image Description with Diverse Multimodal Controls." arXiv preprint arXiv:2305.02677 (2023).
+

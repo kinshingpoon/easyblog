@@ -52,3 +52,4 @@ featured: true
 - [The International Journal of Robotics Research, IF=9.2] **A Surface Reconstruction Method for In-Detail Underwater 3D Optical Mapping** [[paper]](https://inria.hal.science/hal-01030845/file/underwater.pdf) 
 - [Journal of Field Robotics, IF=8.3] **Coverage Path Planning with Real-time Replanning and Surface Reconstruction for Inspection of Three-dimensional Underwater Structures using Autonomous Underwater Vehicles** [[paper]](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/113717/rob21554.pdf?sequence=1) 
 - **Surface reconstruction methods for the recovery of 3D models from underwater interest areas** [[paper]](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1abf7b97fd773eb6376d5f632d9a5f2eca303ce6)
+

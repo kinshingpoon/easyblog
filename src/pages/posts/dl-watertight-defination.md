@@ -66,3 +66,4 @@ In other words, in a manifold mesh, there are at one place more than two faces t
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/300px-Inclined_plane.png)
 
+

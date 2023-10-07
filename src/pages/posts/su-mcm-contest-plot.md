@@ -132,3 +132,4 @@ show_pic()
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716306.png)
 ## 其他
 画图的话当然还是可以用一些软件什么的了，然后比较好的像origin专业画图的，但是这个需要专门去学习之后才能将图画的更好看一些，本人也只是要用的时候可以找一些资料画一些图，但也没有啥经验，以后的话可能会使用的更多一点。如果是话那种示意图的话，可以用viso还有PPT，个人最熟悉的还是PPT了，日常使用PPT去画图。
+
