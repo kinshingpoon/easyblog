@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112208.png'
     alt: 'cover'
-tags: ["Software Usage","SSH","穿透"]
+tags: ["Software Usage"]
 theme: 'light'
 featured: true
 ---

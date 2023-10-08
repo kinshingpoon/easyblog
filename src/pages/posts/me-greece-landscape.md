@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307072011177.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307072011177.png'
     alt: 'cover'
-tags: ["Memo","Greece"]
+tags: ["Memo"]
 theme: 'light'
 featured: true
 ---

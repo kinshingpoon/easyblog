@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'
     alt: 'cover'
-tags: ["Memo","会议","出国"]
+tags: ["Memo"]
 theme: 'light'
 featured: true
 ---

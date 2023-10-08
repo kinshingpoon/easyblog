@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/meshes-600x246.jpg'
     alt: 'cover'
-tags: ["Deep Learning","3D","Mesh"]
+tags: ["Deep Learning","3D"]
 theme: 'light'
 featured: true
 ---

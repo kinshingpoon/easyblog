@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305210935705.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305210935705.png'
     alt: 'cover'
-tags: ["Deep Learning","Cross-modal Retrieval", "Remote Sensing"]
+tags: ["Deep Learning", "Remote Sensing"]
 theme: 'light'
 featured: true
 ---
