@@ -57,13 +57,28 @@ const dateFormated = formatDate(pubDate);
           <slot />
           <div class="component">
             <div class="component-content">
-              <div class="article-copyright">
-                <a class="content" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank"
-                  >Copyright: Attribution-NonCommercial-NoDerivs 4.0 International</a
-                >
+
+              <div class="article-copyright" style="display: flex; justify-content: center; align-items: center;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                  <img class="copyright-img" src="../public/favicon.svg" alt="thanks" width="60" style="display: block; margin: 0;">
+                  <span style="font-size: 24px; margin-left: 10px;">Thanks for Reading</span>
+                </div>
+                  <div class="cccopyright" style="padding:10px;margin:auto;font-size:16px;width:auto;text-align:center;:2px solid">
+                      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW" target="_blank" rel="noopener noreferrer">Copyright: Attribution-NonCommercial-NoDerivs 4.0 International</a>
+                  </div>
               </div>
             </div>
           </div>
+          <section class="more-from-newsroom">
+            <div class="section-content">
+              <!-- <ul role="list" class="section-tiles">
+              </ul> -->
+              <div class="view-archive-wrapper">
+                <a href="/" class="cta-primary-light" data-analytics-region="router" data-analytics-title="view archive">Back</a>
+              </div>
+            </div>
+          </section>
+          
         </article>
       </section>
     </main>
