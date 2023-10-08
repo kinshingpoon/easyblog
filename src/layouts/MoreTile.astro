@@ -18,7 +18,7 @@ const label = `${title} - ${type} - Published Time ${dateFormated}`;
     aria-label={label}
   >
     <div class="tile__media" aria-hidden="true">
-      <img class="cover image" data-src={cover} alt="loading"/>
+      <img class="cover image" data-src={cover} alt="loading" onerror="this.src='../public/favicon.svg'"/>
     </div>
     <div class="tile__description" aria-hidden="true">
       <div class="tile__head">
@@ -29,3 +29,16 @@ const label = `${title} - ${type} - Published Time ${dateFormated}`;
     </div>
   </a>
 </li>
+<!-- <script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    var script = document.createElement("script");
+    script.src = "/static/js/animation.js";
+    document.head.appendChild(script);
+
+    script.onload = function () {
+      console.log("lazyload.js loaded");
+      // when layout is loaded, load the images
+      initImage();
+    };
+  });
+</script> -->
