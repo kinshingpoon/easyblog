@@ -5,8 +5,8 @@ pubDate: 2023-04-13
 description: '记录第一次出国参会的前期准备'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121828798.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121828798.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121828798.png'
     alt: 'cover'
 tags: ["Memo"]
 theme: 'light'
@@ -21,7 +21,7 @@ featured: true
 
 - **参会准备**: 旅费申请，护照、签证等
 
-![Thessaloniki, Greece | inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121836256.png)
+![Thessaloniki, Greece | inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121836256.png)
 
 ## 一、旅费申请
 

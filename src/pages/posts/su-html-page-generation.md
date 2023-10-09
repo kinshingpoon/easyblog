@@ -5,8 +5,8 @@ pubDate: 2023-10-07
 description: 'HTML静态页面生成'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310071459794.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310071459794.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310071459794.png'
     alt: 'cover'
 tags: ["Software Usage","ChatGPT"]
 theme: 'light'

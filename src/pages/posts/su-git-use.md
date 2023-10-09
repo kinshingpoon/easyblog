@@ -5,8 +5,8 @@ pubDate: 2023-10-04
 description: '记录git命令行的使用方法'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310042342534.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310042342534.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310042342534.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310042342534.png'
     alt: 'cover'
 tags: ["Software Usage","Git"]
 theme: 'light'

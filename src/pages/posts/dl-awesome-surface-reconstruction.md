@@ -5,8 +5,8 @@ pubDate: 2023-07-07
 description: 'Surface Reconstruction'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307071758579.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202307071758579.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202307071758579.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202307071758579.png'
     alt: 'cover'
 tags: ["Deep Learning","3D"]
 theme: 'light'

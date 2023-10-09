@@ -5,8 +5,8 @@ pubDate: 2023-10-07
 description: '字符串问题'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310072021594.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310072021594.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310072021594.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202310072021594.png'
     alt: 'cover'
 tags: ["Data Structure","LeetCode 75"]
 theme: 'light'

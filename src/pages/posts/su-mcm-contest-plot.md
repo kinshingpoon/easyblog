@@ -5,8 +5,8 @@ pubDate: 2023-04-12
 description: 'python论文画图模板'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121716469.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121716469.png'
     alt: 'cover'
 tags: ["Software Usage"]
 theme: 'light'
@@ -67,7 +67,7 @@ plt.tight_layout()
 plt.show()
 plt.savefig('pic_1'.png',format='png')
 ```
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121715830.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121715830.png)
 
 ### 组合图
 ```python
@@ -125,11 +125,11 @@ plt.tight_layout()
 save_pic(1)
 show_pic()
 ```
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716469.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121716469.png)
 还有一些其他的图，例如雷达图，各种热力图，这些都是可以用这个模板的，这样你画出来的图片会比较清晰和好看。
 这里再附上一个雷达图，其他图也没有怎么画了。
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202304121716306.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202304121716306.png)
 ## 其他
 画图的话当然还是可以用一些软件什么的了，然后比较好的像origin专业画图的，但是这个需要专门去学习之后才能将图画的更好看一些，本人也只是要用的时候可以找一些资料画一些图，但也没有啥经验，以后的话可能会使用的更多一点。如果是话那种示意图的话，可以用viso还有PPT，个人最熟悉的还是PPT了，日常使用PPT去画图。
 

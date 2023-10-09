@@ -5,8 +5,8 @@ pubDate: 2023-04-08
 description: '博客记录第一天'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/20230409112305.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/20230409112305.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/20230409112305.png'
     alt: 'cover'
 tags: ["Memo"]
 theme: 'light'

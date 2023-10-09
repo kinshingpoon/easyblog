@@ -5,8 +5,8 @@ pubDate: 2023-05-19
 description: '课堂汇报整理一下看的几篇prompt tuning的文章'
 author: 'Jack Pan'
 cover:
-    url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
-    square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512828.png'
+    url: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202305191512828.png'
+    square: 'https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202305191512828.png'
     alt: 'cover'
 tags: ["Deep Learning","Vision and Language"]
 theme: 'light'
@@ -29,11 +29,11 @@ Fine-tuning是预训练语言模型“迁就“各种下游任务。具体体现
 
 Prompting是各种下游任务“迁就“预训练语言模型。具体体现也是上面介绍的，我们需要对不同任务进行重构，使得它达到适配预训练语言模型的效果。总之，这个过程中，是下游任务做出了更多的牺牲。（部分参考来自https://zhuanlan.zhihu.com/p/395115779）
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202305191512884.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202305191512884.png)
 
 当前大模型时代下的四驾马车分别是数据，模型、预训练方式、提示工程，其中提示工程在视觉和语言任务中发挥重要作用。
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041042639.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041042639.png)
 
 ## 发展历史
 （以下chatGPT生成内容）
@@ -67,15 +67,15 @@ B.	Prompting visual-language models for efficient video understanding
 
 当前的迁移学习协议根据调整范围进行分组:完全微调，面向头部和面向骨干的方法。相反，视觉提示微调（Visual prompt tuning, VPT）在输入空间中添加了额外的参数。方法对比如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041047642.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041047642.png)
 
 其中VPT方法具体方法可以分为VPT-Deep和VPT-Shallow，其主要区别在于Transformer Encoder Layer添加Visual-Prompt的层数：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041048690.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041048690.png)
 
 使用表达式可以表示成如下所示（蓝色表示冻结的参数，橙色表示需要微调的参数）：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041049298.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041049298.png)
 
 VPT方法只在输入空间中引入少量特定于任务的可学习参数，而在下游训练期间冻结整个预训练的Transformer主干。在实践中，这些附加参数被简单地添加到每个transformer层的输入序列中，并在微调期间与线性头部一起学习。
 
@@ -83,13 +83,13 @@ VPT方法只在输入空间中引入少量特定于任务的可学习参数，�
 
 在视频理解任务中，本方法通过优化任务特定的提示向量和时间转换器，我们有效地使CLIP适应各种视频理解任务: action recognition, text-video retrieval, and action localisation, across closed-set, few-shot, and zero-shot scenarios.
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041050635.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041050635.png)
 
 在此方法（如上图所示）学习提示的模式适应，在训练时，CLIP的图像和文本编码器都保持冻结状态，梯度将流经文本编码器，只更新提示向量。 最终，这些可学习的向量最终构建文本编码器可以理解的“虚拟”提示模板，并生成所需的分类器或查询嵌入。通过这个方式可以将多个任务共享一个共享的参数权重，且使用了预训练的CLIP模型，减少训练难度。举例多任务共享权重：
 
 (a) Action Recognition 考虑将视频剪辑或片段分类为动作类别之一。
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041050256.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041050256.png)
 
 其中提示向量{𝑎_}是所有操作类别共享的，因此它们只是特定于任务的。
 
@@ -113,22 +113,22 @@ C.	Caption Anything: Interactive Image Description with Diverse Multimodal Contr
 
 首先关于什么是Segment anything，区别于语义分割和实例分割，它分割的物体更加多元，的更加广泛，包括实力分割目标的部分（例如，剪刀的剪刀把和剪刀头）。下面是Segment anything中的300个masks以上分割结果图：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041052650.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041052650.png)
 
 本文提出了一种新的图像分割任务、模型和数据集，如下图所示。该模型使用提示工程进行设计和训练，因此它可以将zero-shot到新的图像分布和任务上。
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041052376.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041052376.png)
 
 关于上图中(b) SAM具体结构如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041053202.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041053202.png)
 
 此方法使用一个MAE预训练的视觉变压器(ViT)最低限度地适应处理高分辨率输入
 用位置编码对点和框进行学习嵌入求和; 使用CLIP现成的文本编码器的自由格式文本;蒙版嵌入使用卷积和求和元素与图像嵌入; 利用焦损和色块损耗的线性组合进行掩模预测。
 
 此任务还通过设计一个子任务解决了分割中的歧义问题：对于一个输出，如果给出一个模糊的提示，该模型将平均多个有效掩码。即通过一个提示可以输出多个有效的分割结果，选取得分较高的掩码进行输出。如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041054846.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041054846.png)
 
 本模型在多个下游子任务上可以表现出较好的效果Zero-Shot Edge Detection、Zero-Shot Object Proposals，Zero-Shot Instance Segmentation，Zero-Shot Text-to-Mask。
 
@@ -136,7 +136,7 @@ C.	Caption Anything: Interactive Image Description with Diverse Multimodal Contr
 
 考虑到Segment anything强大的图像分割能力和与不同提示的高交互性，但是它在视频的一致分割方面表现不佳。因此提出了Segment anything在视频分割上的拓展——Track anything，如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041054547.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041054547.png)
 
 TAM分成四个步骤：
 
@@ -155,15 +155,15 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 
 为了解决上述问题，通过引入Segment Anything，使得CIC模型可以实现多种与用户交互的任务：以目标为中心的对话、多种视觉控制的文本描述等，如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041056970.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041056970.png)
 
 相比之前的文本描述方法，此方法使用了SAM作为视觉提示模版的输出模型，同时使用了LLM模型作为文本提示模版的生成模型，如下图所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041056591.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041056591.png)
 
 具体CAT模型如下所示：
 
-![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202306041057069.png)
+![|inline](https://raw.githubusercontent.com/jaychempan/images/main/blog-imgs/202306041057069.png)
 
 此模型通过引入了SAM和LLM分别作为视觉和语言提示模版生成模型，扩展了文本生成模型，使其更加通用和具有更人性化的价值。
 
@@ -182,7 +182,7 @@ SAM仅在图像分割方面表现出优越的性能，而不能处理复杂的�
 4. 结合自动调参：结合自动调参技术，可以通过优化Prompt tuning的超参数来提高模型的性能。这可以减少手动调整的成本，提高Prompt tuning的效率。
 
 
-相关内容可以参考slides：https://kinshingpoon.github.io/Presentations/Prompt-Engineering.pdf
+相关内容可以参考slides：https://jaychempan.github.io/Presentations/Prompt-Engineering.pdf
 
 # 四、参考文献
 [1] Ju, Chen, et al. "Prompting visual-language models for efficient video understanding." Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXXV. Cham: Springer Nature Switzerland, 2022.
