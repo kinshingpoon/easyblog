@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-o3udDf5tE5ZZwFj3Gz9v7znFQA6jXmTqhhzK9V4whCer6IqVNOb1qUC3q6C9CjqE" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .heart {
+            color: red;
+            font-size: 48px;
+            animation: beat 0.5s infinite alternate;
+        }
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>赞赏作者</h1>
+        <i class="fas fa-heart heart"></i>
+        <p>感谢您的支持！</p>
+    </div>
+</body>
+</html>
