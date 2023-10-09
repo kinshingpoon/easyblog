@@ -46,6 +46,7 @@ Dataset Design and Robustness of CLIP** | [[paper]](https://proceedings.neurips.
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310090413912.png)
 
 **引入Mask训练方法：**
+
 *更快的CLIP训练方法*
 
 - [CVPR 2023] `Meta` | **Scaling Language-Image Pre-training via Masking** | [[paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Scaling_Language-Image_Pre-Training_via_Masking_CVPR_2023_paper.pdf)[[code]](https://github.com/facebookresearch/flip)
@@ -72,6 +73,7 @@ Language-Image Pretraining** | [[paper]](https://openaccess.thecvf.com/content/C
 >（在某个领域的应用）
 
 **3D点云方向 & NeRF：** 
+
 *本质上还是2D图像和文本进行预训练:*
 
 - [CVPR 2022] `ShanghaiAI Lab` | **PointCLIP: Point Cloud Understanding by CLIP** | [[paper]](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_PointCLIP_Point_Cloud_Understanding_by_CLIP_CVPR_2022_paper.pdf)[[code]](https://github.com/ZrrSkywalker/PointCLIP)

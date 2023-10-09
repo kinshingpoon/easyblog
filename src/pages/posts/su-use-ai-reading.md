@@ -8,7 +8,7 @@ cover:
     url: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310091332027.png'
     square: 'https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310091332027.png'
     alt: 'cover'
-tags: ["Deep Learning","CLIP"]
+tags: ["Software Usage"]
 theme: 'light'
 featured: true
 ---
