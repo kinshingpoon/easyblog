@@ -46,6 +46,7 @@ Dataset Design and Robustness of CLIP** | [[paper]](https://proceedings.neurips.
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310090413912.png)
 
 **引入Mask训练方法：**
+*更快的CLIP训练方法*
 
 - [CVPR 2023] `Meta` | **Scaling Language-Image Pre-training via Masking** | [[paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Scaling_Language-Image_Pre-Training_via_Masking_CVPR_2023_paper.pdf)[[code]](https://github.com/facebookresearch/flip)
 
@@ -53,7 +54,6 @@ Dataset Design and Robustness of CLIP** | [[paper]](https://proceedings.neurips.
 
 
 **Self-Distillation+Mask Image Modeling：**
-*更快的CLIP训练方法*
 
 - [CVPR 2023] | **MaskCLIP: Masked Self-Distillation Advances Contrastive
 Language-Image Pretraining** | [[paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Dong_MaskCLIP_Masked_Self-Distillation_Advances_Contrastive_Language-Image_Pretraining_CVPR_2023_paper.pdf)[[code]](https://github.com/LightDXY/MaskCLIP)
