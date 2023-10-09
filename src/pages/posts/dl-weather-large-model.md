@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '气象智能大模型汇总'
+title: '【气象智能大模型汇总】Weather Forcast'
 pubDate: 2023-09-28
 description: '气象智能大模型学习笔记'
 author: 'Jack Pan'
