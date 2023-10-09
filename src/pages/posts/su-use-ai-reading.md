@@ -13,7 +13,7 @@ theme: 'light'
 featured: true
 ---
 
-TXYZ.AI官网：https://txyz.ai/
+TXYZ.AI官网：https://txyz.ai/   
 
 ![|inline](https://raw.githubusercontent.com/kinshingpoon/images/main/blog-imgs/202310091416802.png)
 
